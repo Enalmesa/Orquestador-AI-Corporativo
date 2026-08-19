@@ -10,12 +10,13 @@ import {
   Layers, 
   Code2, 
   ChevronRight,
-  ShieldCheck
+  ShieldCheck,
+  GraduationCap
 } from 'lucide-react';
 import { Language } from '../types';
 import { t } from '../utils/i18n';
 
-export type TabId = 'chat' | 'subagents' | 'knowledge' | 'audit' | 'admin' | 'calculator' | 'commercial' | 'pitch' | 'apidocs';
+export type TabId = 'chat' | 'subagents' | 'knowledge' | 'audit' | 'admin' | 'calculator' | 'commercial' | 'pitch' | 'apidocs' | 'thesis';
 
 interface SidebarProps {
   activeTab: TabId;
@@ -34,6 +35,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeTab, onTabChange, lang }
     { id: 'commercial' as TabId, label: t(lang, 'planComercial'), icon: BadgeDollarSign, badge: t(lang, 'badgeNuevo') },
     { id: 'pitch' as TabId, label: t(lang, 'fasesTransformacion'), icon: Layers },
     { id: 'apidocs' as TabId, label: t(lang, 'documentacionApi'), icon: Code2, badge: 'v1' },
+    { id: 'thesis' as TabId, label: t(lang, 'memoriaTesis'), icon: GraduationCap, badge: 'Tesis' },
   ];
 
   return (

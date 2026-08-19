@@ -1,1 +1,30 @@
 @import "tailwindcss";
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  aside, nav, header, button, .print\:hidden {
+    display: none !important;
+  }
+  main {
+    overflow: visible !important;
+    height: auto !important;
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  #thesis-document-body {
+    background: white !important;
+    color: black !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+  h1, h2, h3, h4 {
+    page-break-after: avoid;
+  }
+  section {
+    page-break-inside: auto;
+  }
+}

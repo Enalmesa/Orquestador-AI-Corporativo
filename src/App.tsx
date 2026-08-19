@@ -10,6 +10,7 @@ import { FinancialCalculator } from './components/FinancialCalculator';
 import { CommercialPlan } from './components/CommercialPlan';
 import { PitchDeck6Phases } from './components/PitchDeck6Phases';
 import { ApiDocs } from './components/ApiDocs';
+import { ThesisDocumentation } from './components/ThesisDocumentation';
 import { AuthModal } from './components/AuthModal';
 import { NotificationCenter } from './components/NotificationCenter';
 import { UserProfile, Language, ThemeMode, ComplianceNotification } from './types';
@@ -114,6 +115,7 @@ export default function App() {
           {activeTab === 'commercial' && <CommercialPlan lang={lang} />}
           {activeTab === 'pitch' && <PitchDeck6Phases lang={lang} />}
           {activeTab === 'apidocs' && <ApiDocs lang={lang} />}
+          {activeTab === 'thesis' && <ThesisDocumentation lang={lang} />}
         </main>
 
       </div>
