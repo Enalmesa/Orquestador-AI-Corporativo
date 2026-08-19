@@ -1,0 +1,6 @@
+{
+  "name": "Orquestador IA Corporativa - Gobernanza y Cumplimiento",
+  "description": "Sistema corporativo RAG con subagentes de IA para consultas de gobernanza, cumplimiento normativo y procedimientos internos con historial de auditoría y notificaciones.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
